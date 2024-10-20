@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Details</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a href="index.html" class="navbar-link"> Book Library</a>
+      </div>
+      <div>
+        <a href="wishlist.html" class="navbar-link">Wishlist</a>
+        <span id="wishlistCount" class="wishlist-count">0</span>
+      </div>
+    </nav>
+
+    <div id="loader" class="loader"></div>
+
+    <!-- Book Details Section -->
+    <div id="book-details-container" class="book-details-container">
+      <div id="book-details" class="book-details">
+        <!-- Book details will be dynamically generated here -->
+      </div>
+    </div>
+
+    <script type="module" src="js/book-details.js"></script>
+  </body>
+</html>

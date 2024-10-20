@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Wishlist</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a href="index.html" class="navbar-link"> Book Library</a>
+      </div>
+      <span id="wishlistCount" class="wishlist-count">0</span>
+    </nav>
+
+    <!-- Wishlist Container -->
+    <div class="wishlist-container">
+      <h2>Wishlist</h2>
+      <div id="loader" class="loader"></div>
+      <div id="wishlist" class="book-list">
+        <!-- Wishlisted books will be dynamically generated here -->
+      </div>
+    </div>
+
+    <script type="module" src="js/whislist.js"></script>
+  </body>
+</html>

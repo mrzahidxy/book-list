@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gutendex Books</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a href="index.html" class="navbar-link"> Book Library</a>
+      </div>
+      <div>
+        <a href="wishlist.html" class="navbar-link">Wishlist</a>
+        <span id="wishlistCount" class="wishlist-count">0</span>
+      </div>
+    </nav>
+
+    <!-- Filter Section -->
+    <div class="filter-container">
+      <form id="filterForm" class="filter-form">
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="Search books by title..."
+        />
+        <select id="genreDropdown" class="genre-select">
+          <option value="">All Genres</option>
+          <!-- Genre options will be dynamically populated -->
+        </select>
+        <button id="clearFilterBtn" class="btn">Clear Filter</button>
+      </form>
+    </div>
+
+    <div id="loader" class="loader"></div>
+
+    <!-- Book List -->
+    <div class="book-list-container">
+      <div id="book-list" class="book-list">
+        <!-- Books will be dynamically generated here -->
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination-container">
+      <button id="prevBtn" class="pagination-btn" disabled>Previous</button>
+      <button id="nextBtn" class="pagination-btn">Next</button>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
